@@ -1,143 +1,41 @@
 <!DOCTYPE html>
 <html lang="vi">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bài 12: Tạo Biểu Mẫu</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 20px;
-            background-color: #f4f4f9;
-        }
-
-        h1, h2 {
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px;
-            border-radius: 5px;
-        }
-
-        h2 {
-            margin-top: 30px;
-        }
-
-        p {
-            color: #555;
-        }
-
-        form {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-
-        label {
-            font-weight: bold;
-        }
-
-        input, select, button {
-            display: block;
-            width: 100%;
-            margin-bottom: 15px;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            font-size: 14px;
-        }
-
-        button {
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background-color: #45a049;
-        }
-
-        iframe {
-            width: 100%;
-            height: 500px;
-            border: 1px solid #ccc;
-            margin-top: 20px;
-        }
-
-        a {
-            color: blue;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        .section {
-            margin-bottom: 30px;
-        }
-
-        .home-button {
-            display: block;
-            margin: 30px auto;
-            padding: 10px 20px;
-            background-color: #4CAF50;
-            color: white;
-            text-align: center;
-            text-decoration: none;
-            font-size: 16px;
-            font-weight: bold;
-            border-radius: 5px;
-            width: 150px;
-        }
-
-        .home-button:hover {
-            background-color: #45a049;
-        }
-    </style>
+    <title>Bài 13: Khái niệm và vai trò của CSS</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <h1>Bài 12: Tạo Biểu Mẫu</h1>
+    <div class="container">
+        <h1 class="title">Bài 13: Khái niệm và vai trò của CSS</h1>
+        
+        <h2 class="subtitle">Luyện tập 1 trang 75 Tin học 12: Khẳng định “Ngôn ngữ định dạng CSS chính là ngôn ngữ HTML” là đúng hay sai?</h2>
+        <p><strong>Lời giải:</strong> Sai. Ngôn ngữ định dạng CSS (Cascading Style Sheets) không phải là ngôn ngữ HTML (HyperText Markup Language). HTML được sử dụng để tạo cấu trúc và định dạng nội dung trên trang web bằng cách sử dụng các thẻ và các thuộc tính được nhúng trong các thẻ này. Trong khi đó, CSS được sử dụng để điều chỉnh cách mà các phần tử HTML được hiển thị trên trình duyệt, bao gồm màu sắc, font chữ, khoảng cách, đường viền và các thuộc tính khác. CSS là một ngôn ngữ độc lập dùng để cung cấp phong cách và thiết kế cho các trang web, và nó hoạt động cùng với HTML để tạo ra trải nghiệm người dùng hoàn chỉnh.</p>
 
-    <!-- LUYỆN TẬP -->
-    <div class="section">
-        <h2>Luyện Tập</h2>
-        <p>Nhập thông tin vào biểu mẫu sau:</p>
-        <form action="/submit_registration" method="post">
-            <label for="fullname">Họ và tên:</label>
-            <input type="text" id="fullname" name="fullname" required>
+        <h2 class="subtitle">Luyện tập 2 trang 75 Tin học 12: Khẳng định “Có thể chỉ cần thay đổi thông tin của tệp CSS sẽ làm thay đổi định dạng của nhiều trang web thậm chí của cả một trang website” là đúng hay sai?</h2>
+        <p><strong>Lời giải:</strong> Đúng. Việc chỉ cần thay đổi thông tin trong tệp CSS có thể làm thay đổi định dạng của nhiều trang web hoặc thậm chí của cả một trang web. Điều này là do CSS được sử dụng để kiểm soát phong cách và định dạng của các phần tử HTML trên trang web. Thay đổi các thuộc tính trong tệp CSS, chẳng hạn như màu sắc, kích thước, font chữ, độ dày của đường viền, và khoảng cách, có thể ảnh hưởng đến cách mà các phần tử HTML được hiển thị trên trang web. Do đó, việc chỉnh sửa CSS có thể ảnh hưởng lớn đến giao diện của nhiều trang web hoặc thậm chí của cả một trang web.</p>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+        <h2 class="subtitle">Vận dụng 1 trang 75 Tin học 12: Trong các phần mềm soạn thảo văn bản thường có chức năng tạo các mẫu định dạng Style Sheet dùng để tạo khuôn cho các đoạn (paragraph) của văn bản. Em hãy trình bày sự giống nhau và tương thích của Style Sheet trong các phần mềm soạn thảo văn bản với CSS của trang web.</h2>
+        <p><strong>Lời giải:</strong></p>
+        <ul>
+            <li><strong>Cấu trúc và cú pháp:</strong> Cả Style Sheet trong các phần mềm soạn thảo văn bản và CSS đều tuân theo một cấu trúc và cú pháp nhất định. Thông thường, các tệp Style Sheet được viết bằng cú pháp CSS trong trang web, trong khi các chức năng tạo định dạng trong phần mềm soạn thảo văn bản cũng sẽ tuân theo một cấu trúc tương tự.</li>
+            <li><strong>Tính tái sử dụng:</strong> Cả hai đều hỗ trợ tính tái sử dụng. Trong CSS, bạn có thể đặt các quy tắc định dạng trong một tệp riêng và áp dụng chúng cho nhiều trang web hoặc nhiều phần tử HTML khác nhau. Tương tự, trong các phần mềm soạn thảo văn bản, bạn có thể tạo các mẫu định dạng và áp dụng chúng cho nhiều phần văn bản khác nhau.</li>
+            <li><strong>Khuôn mẫu định dạng:</strong> Cả Style Sheet và CSS đều cho phép bạn tạo ra các khuôn mẫu định dạng để áp dụng cho các phần tử văn bản. Bằng cách này, bạn có thể định dạng các tiêu đề, đoạn văn, danh sách, v.v., một cách thống nhất và dễ dàng.</li>
+            <li><strong>Kiểm soát phong cách và định dạng:</strong> Cả Style Sheet và CSS đều cho phép bạn kiểm soát phong cách và định dạng của các phần tử văn bản. Bạn có thể điều chỉnh màu sắc, kích thước chữ, font chữ, độ dày của đường viền, khoảng cách, v.v., để tạo ra giao diện văn bản phù hợp với ý định của mình.</li>
+        </ul>
 
-            <label for="birthdate">Ngày sinh:</label>
-            <input type="date" id="birthdate" name="birthdate" required>
+        <h2 class="subtitle">Vận dụng 2 trang 75 Tin học 12: Thiết lập trang web với nội dung sau và định dạng trang bằng các mẫu CSS</h2>
+        <p><strong>Lịch sử CSS:</strong> Ý tưởng của CSS do kỹ sư Hakon Wium Lie, người Na Uy thiết lập năm 1994 trong khi làm việc với Tim Berners-Lee tại viện hạt nhân CERN. Ý tưởng của CSS là tạo ra các mẫu định dạng riêng, độc lập cho các phần tử HTML của trang web. Cách tạo ngôn ngữ định dạng riêng này sẽ giúp ích rất nhiều nếu so sánh với việc định dạng theo từng thẻ HTML.</p>
 
-            <label for="membership">Loại hình thành viên:</label>
-            <select id="membership" name="membership">
-                <option value="basic">Thành viên cơ bản</option>
-                <option value="premium">Thành viên cao cấp</option>
-            </select>
+        <h3 class="subtitle">Lịch sử các phiên bản CSS đầu tiên</h3>
+        <p>Các ý tưởng ban đầu được đưa ra năm 1994 nhưng phiên bản CSS1 chính thức ra đời năm 1996. Phiên bản tiếp theo, CSS2, được khởi động ngay sau đó nhưng mãi đến năm 1998 mới hoàn thiện. Phiên bản chính thức hoàn thiện nhất của CSS2 là CSS2.1, ra đời năm 2011, bản CSS2.1 nâng cấp được hoàn thiện năm 2016.</p>
 
-            <button type="submit">Đăng ký</button>
-        </form>
+        <h3 class="subtitle">Các phiên bản CSS tiếp theo</h3>
+        <p>Từ bản CSS3 trở đi, CSS được phát triển theo từng gói riêng biệt. Hiện nay các gói của CSS3 vẫn đang được phát triển và hoàn thiện. Đồng thời một số chuẩn CSS4 và CSS5 vẫn đang được tiếp tục thiết lập mới.</p>
+
+        <p>Hiện tại, hiệp hội chịu trách nhiệm phát triển các chuẩn của HTML, CSS và các công nghệ có liên quan là tổ chức World Wide Web Consortium (W3C), có địa chỉ tại <a href="http://www.w3.org/" target="_blank">www.w3.org</a>.</p>
+          <a href="https://uyenthao-robot.github.io/websitenhom5/" class="home-button">HOME</a>
     </div>
-
-    <!-- VẬN DỤNG -->
-    <div class="section">
-        <h2>Vận Dụng</h2>
-        <p>Nhấp vào liên kết "Đăng ký" để mở biểu mẫu đăng ký trong iframe bên dưới:</p>
-        <p><a href="link_den_trang_web.html" target="iframe_content">Đăng ký</a></p>
-
-        <iframe name="iframe_content" frameborder="0"></iframe>
-    </div>
-
-    <!-- HOME BUTTON -->
-    <a href="https://uyenthao-robot.github.io/websitenhom5/">Trang chủ</a>
 </body>
-
 </html>
